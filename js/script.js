@@ -79,9 +79,9 @@ $(function() {
 
   function check_level() {
     if (total_clicks === 8) {
-      $(".second-level").removeClass("level");
-    } else if (total_clicks === 14) {
       $(".third-level").removeClass("level");
+    } else if (total_clicks === 14) {
+      $(".second-level").removeClass("level");
     } else if (total_clicks === 22) {
       $(".first-level").removeClass("level");
     }
