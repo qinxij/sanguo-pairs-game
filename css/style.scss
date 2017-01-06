@@ -65,8 +65,10 @@ header , section  {
   max-width: 800px;
   display: block;
   margin: 0 auto 2em;
-  padding: 2em 0;
   position: relative;
+}
+header {
+  padding: 2em 0 0;
 }
 footer {
   max-width: 800px;
@@ -111,6 +113,38 @@ section {
   }
   margin-left:auto;
   margin-right: auto;
+
+
+  .buttons {
+    display: block;
+    height: auto;
+    padding:1em 0;
+    //border:1px solid #fff;
+    text-align: center;
+    .fork {
+      display: inline-block;
+      margin-right:0.2em;
+      font-size: 1.5em;
+      padding:.5em 1em;
+      border-radius: 4px;
+      background:rgba(255,255,255,0.2);
+      color:$color;
+      @include prefix(transition,all 0.3s linear,webkit moz ms o);
+      &:hover {
+        background:rgba(255,255,255,0.1);
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 1.2em;
+        padding:.4em 0.8em;
+      }
+    }
+    .fork-svg {
+      width:1em;
+      height:1em;
+      position: relative;
+      top:0.1em;
+    }
+  }
 
   .total_clicks {
     display: block;

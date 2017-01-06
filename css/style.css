@@ -39,8 +39,10 @@ header, section {
   max-width: 800px;
   display: block;
   margin: 0 auto 2em;
-  padding: 2em 0;
   position: relative; }
+
+header {
+  padding: 2em 0 0; }
 
 footer {
   max-width: 800px;
@@ -81,6 +83,35 @@ section {
     section {
       width: 90%;
       height: auto; } }
+  section .buttons {
+    display: block;
+    height: auto;
+    padding: 1em 0;
+    text-align: center; }
+    section .buttons .fork {
+      display: inline-block;
+      margin-right: 0.2em;
+      font-size: 1.5em;
+      padding: .5em 1em;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+      section .buttons .fork:hover {
+        background: rgba(255, 255, 255, 0.1); }
+      @media screen and (max-width: 650px) {
+        section .buttons .fork {
+          font-size: 1.2em;
+          padding: .4em 0.8em; } }
+    section .buttons .fork-svg {
+      width: 1em;
+      height: 1em;
+      position: relative;
+      top: 0.1em; }
   section .total_clicks {
     display: block;
     text-align: center;
