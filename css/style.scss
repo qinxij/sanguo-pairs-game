@@ -169,8 +169,6 @@ section {
     margin-left:auto;
     margin-right: auto;
     text-align: center;
-    //box-shadow: 4px 4px 0px 0px rgba(255,255,255,0.1);
-    @include prefix(box-shadow,4px 4px 0px 0px rgba(255,255,255,0.1),webkit);
     // transform-style: preserve-3d;
     @include prefix(transform-style,preserve-3d,webkit moz ms o);
   }
@@ -288,10 +286,12 @@ Level Icons
 }
 
 .level-icon::after {
-  content: "☆";
+  content: "✩";
+  color: rgb(255,160,51);
 }
 .level-icon.level::after {
   content: "★";
+  color: rgb(51,160,255);
 }
 
 footer {

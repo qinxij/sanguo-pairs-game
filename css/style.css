@@ -129,8 +129,6 @@ section {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    -webkit-box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 0.1);
-    box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 0.1);
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
@@ -271,10 +269,12 @@ Level Icons
       top: 0.1em; } }
 
 .level-icon::after {
-  content: "☆"; }
+  content: "✩";
+  color: #ffa033; }
 
 .level-icon.level::after {
-  content: "★"; }
+  content: "★";
+  color: #33a0ff; }
 
 footer .copyright {
   display: block;
