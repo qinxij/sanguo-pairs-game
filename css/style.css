@@ -116,7 +116,7 @@ section {
     display: block;
     text-align: center;
     color: #ddd;
-    font-size: 1em;
+    font-size: 1.2em;
     margin-bottom: 1em; }
     @media screen and (max-width: 650px) {
       section .total_clicks {
